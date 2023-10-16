@@ -22,7 +22,7 @@ namespace Utilities {
 		public static IEnumerator CurveInterp(AnimationCurve animCurve, float duration, Action<float> perStep) {
 			float timer = 0;
 			while ((timer += Time.deltaTime) < duration) {
-				perStep(animCurve(timer / duration));
+				perStep(animCurve.Evaluate(timer / duration));
 				yield return null;
 			}
 			perStep(1);
