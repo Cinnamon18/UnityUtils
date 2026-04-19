@@ -30,12 +30,20 @@ namespace Utilities {
 			return new Vector3(vector2.x, vector2.y, zComponent);
 		}
 
-		public static void LookAtLerp(this Transform transform, Vector2 targetPos, float turnRate) {
-			transform.up = Vector3.Lerp(transform.up, targetPos - transform.position.V2(), turnRate);
+		public static void LookUpAtLerp(this Transform transform, Vector2 targetPos, float progress) {
+			transform.up = Vector3.Lerp(transform.up, targetPos - transform.position.V2(), progress);
 		}
 
-		public static void LookAtLerp(this GameObject gameObject, Vector2 targetPos, float turnRate) {
-			gameObject.transform.LookAtLerp(targetPos, turnRate);
+		public static void LookUpAtLerp(this GameObject gameObject, Vector2 targetPos, float progress) {
+			gameObject.transform.LookUpAtLerp(targetPos, progress);
+		}
+		
+		public static void LookForwardsAtLerp(this Transform transform, Vector2 targetPos, float progress) {
+			transform.up = Vector3.Lerp(transform.up, targetPos - transform.position.V2(), progress);
+		}
+
+		public static void LookForwardsAtLerp(this GameObject gameObject, Vector2 targetPos, float progress) {
+			gameObject.transform.LookUpAtLerp(targetPos, progress);
 		}
 
 		public static void LookAt2D(this Transform transform, Vector2 target) {

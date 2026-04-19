@@ -7,6 +7,10 @@
 
 // TODO HAHA FIGURE OUT A WAY TO MAKE UNITY PLAY NICE W GENERICS
 
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
 namespace Utilities {
 	public class NamedPrefab {
 		[Serializable]
