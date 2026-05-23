@@ -26,7 +26,7 @@ namespace UI {
 				return;
 			}
 
-			buttonBg.Color = isFocused ? PaletteManager.Palette.Focused : startingButtonColor;
+			// buttonBg.Color = isFocused ? PaletteManager.Palette.Focused : startingButtonColor;
 		}
 
 		private void OnMouseDown() {
