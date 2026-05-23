@@ -26,8 +26,12 @@ namespace Utilities {
 			return new Vector2(vector3.x, vector3.y);
 		}
 
-		public static Vector3 V3(this Vector2 vector2, float zComponent) {
+		public static Vector3 V3(this Vector2 vector2, float zComponent = 0) {
 			return new Vector3(vector2.x, vector2.y, zComponent);
+		}
+		
+		public static Vector3Int V3(this Vector2Int vector2Int, int zComponent = 0) {
+			return new Vector3Int(vector2Int.x, vector2Int.y, zComponent);
 		}
 
 		public static void LookUpAtLerp(this Transform transform, Vector2 targetPos, float progress) {
