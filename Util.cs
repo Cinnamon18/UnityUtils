@@ -55,6 +55,15 @@ namespace Utilities {
 			});
 		}
 
+		/// <summary>
+		/// Sets the alpha channel of the image's color, preserving RGB.
+		/// </summary>
+		public static void SetAlpha(Image image, float alpha) {
+			Color c = image.color;
+			c.a = alpha;
+			image.color = c;
+		}
+
 		public static Vector3 LerpAction(Vector3 start, Vector3 end, float progress, Func<float, float> lerpFunction) {
 			return Vector3.Lerp(start, end, lerpFunction(progress));
 		}
