@@ -30,6 +30,10 @@ namespace Utilities {
 			return new Vector2Int((int)vector3.x, (int)vector3.y);
 		}
 
+		public static Vector2Int V2I(this Vector2 vector2) {
+			return new Vector2Int((int)vector2.x, (int)vector2.y);
+		}
+
 		public static Vector3 V3(this Vector2 vector2, float zComponent = 0) {
 			return new Vector3(vector2.x, vector2.y, zComponent);
 		}
