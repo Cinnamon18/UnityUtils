@@ -15,7 +15,7 @@ namespace Utilities {
 		/// <summary>
 		/// Lerping function. Calls the given action with values between 0 and 1.
 		/// 
-		/// Straight from al*c* sq**red, which was straight from m*l*dyst*r, which was straight from h*ng*****g, which was straight from from P*** t* H******, which was straight from Fl**red.
+		/// Straight from O*H, which was straight from al*c* sq**red, which was straight from m*l*dyst*r, which was straight from h*ng*****g, which was straight from from P*** t* H******, which was straight from Fl**red.
 		/// </summary>
 		/// <param name="durationSec">How long should the lerp last in seconds?</param>
 		/// <param name="perStep">Action callback that will be invoked with args from [0, 1].</param>

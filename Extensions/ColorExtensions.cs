@@ -13,5 +13,9 @@ namespace Utilities {
 			Color.RGBToHSV(color, out float h, out float s, out float v);
 			return Color.HSVToRGB(h, s, v - tintShadePercentage);
 		}
+
+		public static Color SetA(this Color color, float alpha) {
+			return new Color(color.r, color.g, color.b, alpha);
+		}
 	}
 }
